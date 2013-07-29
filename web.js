@@ -7,7 +7,7 @@ app.get('/', function(request, response) {
   
   var buffer = new Buffer(30);
   var data = fs.readFileSync('index.html');
-  buffer.write(data);
+  buffer.write("1234");
   response.send(buffer.tostring());
 
 
